@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Container Styles */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #182C56;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Box */
+  .contact-box {
+    background-color: #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .contact-left, .contact-right {
+    padding: 40px;
+  }
+  
+  .contact-left {
+    flex-basis: 60%;
+  }
+  
+  .contact-right {
+    flex-basis: 40%;
+    background: url('../../../assets/images/aboutus.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+  }
+  
+  .contact-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(24, 44, 86, 0.9); /* Overlay to darken the background image */
+  }
+  
+  .contact-right-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Form Elements */
+  .contact-left h3, .contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    flex-basis: 48%;
+  }
+  
+  input, textarea {
+    width: 100%;
+    background-color: #e6e6e6;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 6px;
+    display: block;
+    color: #182C56;
+  }
+  
+  button {
+    background-color: #182C56;
+    color: white;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(42,10,106,0.3);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3a4b7a;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .contact-box {
+      flex-direction: column;
+    }
+  
+    .contact-left, .contact-right {
+      flex-basis: 100%;
+    }
+  
+    .input-group {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .contact-left, .contact-right {
+      padding: 20px;
+    }
+  }
+  

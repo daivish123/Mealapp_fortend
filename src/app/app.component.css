@@ -1,0 +1,67 @@
+/* Variables */
+/* These are not supported in regular CSS, so I'll replace them with their values directly */
+/* $secondary-color: #141a33; */
+/* $primary-color: #F48023; */
+/* $White: #ffffff; */
+
+/* Main Header */
+/* main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 57px;
+    background-color: #eb934c;
+    height: auto;
+  }
+  
+  main-header a.active {
+    background: #141a33; 
+    border: rgb(234, 112, 112);
+  }
+  
+  main-header a {
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 0;
+    color: #f69696; 
+  }
+  
+  main-header a.ant-btn:hover {
+    color: #e98282; 
+        background: #455ec0; 
+  }
+  
+  main-header img {
+    width: 180px;
+  }
+  
+  main-header .img_profile {
+    width: 25px;
+  }
+  
+  main-header img {
+    width: 180px;
+  }
+  
+  main-header img.img_profile {
+    width: 25px;
+  }
+  
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F48023; 
+    padding: 0;
+  }
+  
+   a{
+    background-color:rgba(red, green, blue, alpha);
+    border: none;
+ }
+
+ .active-button{
+    border-radius: 0px;
+    padding: 2px 5px;
+    background-color: #e80c0c;
+ } */

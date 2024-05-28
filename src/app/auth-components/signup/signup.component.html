@@ -1,0 +1,326 @@
+<!-- <!DOCTYPE html>
+<body>
+<div class="bg" style="background-color:rgba(red, green, blue, alpha);">
+    <nz-spin [nzSpinning]="isSpinning" [nzSize]="'large'" nzTip="Working....">
+        <div class="parent">
+            <div class="child">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="registration-container">
+                            <div class="image-container">
+                                <img src="../../../assets/images/bg.jpg" alt="Sign Up Image" class="signup-image">
+                            </div>
+                            <div class="form-container">
+                <div class="logo-container">
+                    <img src="../../../assets/images/logo.svg" alt="Logo" class="logo">
+                </div>
+                <div nz-row class="imgDiv">
+                    <div nz-col nzSpan="24">
+                        <h3 style="margin-left: 150px;">Register For your Meal Account</h3>
+                    </div>
+                </div>
+                <form nz-form [formGroup]="validateForm">
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback nzErrorTip="Please enter a valid Employee ID">
+                            <input nz-input placeholder="Employee ID (Max 15 characters)" id="employeeId" maxlength="15"  formControlName="employeeId"/>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback [nzErrorTip]="userErrorTpl">
+                            <input nz-input placeholder="Name" type="text"  id="name" formControlName="name" />
+                            <ng-template #userErrorTpl let-control>
+                                <ng-container *ngIf="control.hasError('required')">Please input your username!</ng-container>
+                            </ng-template>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback nzErrorTip="The input is not valid E-mail!">
+                            <input nz-input placeholder="E-mail" id="emailId" formControlName="emailId" />
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback nzErrorTip="Please enter a valid Contact No (10 digits)">
+                            <input nz-input placeholder="Contact No (10 digits)" id="contactNo" type="tel" pattern="[0-9]{10}" formControlName="contactNo"/>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback [nzErrorTip]="errorPass">
+                            <input nz-input placeholder="Password" type="password" id="password" formControlName="password">
+                            <ng-template #errorPass let-control>
+                                <ng-container *ngIf="control.hasError('required')">Password Is Required!</ng-container>
+                                <ng-container *ngIf="control.hasError('pattern')">Password Should Contain 8 Characters, 1 Lowercase, 1 Uppercase, 1 Number, and 1 Special character</ng-container>
+                            </ng-template>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback nzErrorTip="Please confirm your password">
+                            <input nz-input type="password" placeholder="Confirm Password" formControlName="checkPassword" />
+                            <div *ngIf="validateForm.get('checkPassword').hasError('passwordMismatch')" class="error-message">
+                                Passwords do not match!
+                            </div>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback>
+                            <button nz-button class="login-form-button, login-form-margin" nzType="primary" (click)="signup()">Register</button>
+                            Or <a routerLink="/login"> login now! </a>
+                        </nz-form-control>
+                    </nz-form-item>
+                </form>
+                            </div>
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nz-spin>
+</div>
+</body>
+<router-outlet></router-outlet> -->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.component.css">
+</head>
+<body>
+<div class="bg">
+    <nz-spin [nzSpinning]="isSpinning" [nzSize]="'large'" nzTip="Working....">
+        <div class="parent">
+            <div class="child">
+                <div class="image-container">
+                    <img src="../../../assets/images/bg.jpg" alt="Girl Eating Pizza" class="signup-image">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="registration-container">
+                                <div class="logo-container">
+                                    <img src="../../../assets/images/logo.svg" alt="Logo" class="logo">
+                                </div>
+                                <div nz-row class="imgDiv">
+                                    <div nz-col nzSpan="24">
+                                        <h3>Register For your Meal Account</h3>
+                                    </div>
+                                </div>
+                                <form nz-form [formGroup]="validateForm">
+                                    <nz-form-item>
+                                        <nz-form-control nzHasFeedback nzErrorTip="Please enter a valid Employee ID">
+                                            <input nz-input placeholder="Employee ID (Max 15 characters)" id="employeeId" maxlength="15"  formControlName="employeeId"/>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                    <nz-form-item>
+                                        <nz-form-control nzHasFeedback [nzErrorTip]="userErrorTpl">
+                                            <input nz-input placeholder="Name" type="text"  id="name" formControlName="name" />
+                                            <ng-template #userErrorTpl let-control>
+                                                <ng-container *ngIf="control.hasError('required')">Please input your username!</ng-container>
+                                            </ng-template>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                    <nz-form-item>
+                                        <nz-form-control nzHasFeedback nzErrorTip="The input is not valid E-mail!">
+                                            <input nz-input placeholder="E-mail" id="emailId" formControlName="emailId" />
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                    <nz-form-item>
+                                        <nz-form-control nzHasFeedback nzErrorTip="Please enter a valid Contact No (10 digits)">
+                                            <input nz-input placeholder="Contact No (10 digits)" id="contactNo" type="tel" pattern="[0-9]{10}" formControlName="contactNo"/>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                    <nz-form-item>
+                                        <nz-form-control nzHasFeedback [nzErrorTip]="errorPass">
+                                            <input nz-input placeholder="Password" type="password" id="password" formControlName="password">
+                                            <ng-template #errorPass let-control>
+                                                <ng-container *ngIf="control.hasError('required')">Password Is Required!</ng-container>
+                                                <ng-container *ngIf="control.hasError('pattern')">Password Should Contain 8 Characters, 1 Lowercase, 1 Uppercase, 1 Number, and 1 Special character</ng-container>
+                                            </ng-template>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                    <nz-form-item>
+                                        <nz-form-control nzHasFeedback nzErrorTip="Please confirm your password">
+                                            <input nz-input type="password" placeholder="Confirm Password" formControlName="checkPassword" />
+                                            <div *ngIf="validateForm.get('checkPassword').hasError('passwordMismatch')" class="error-message">
+                                                Passwords do not match!
+                                            </div>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                    <nz-form-item>
+                                        <nz-form-control nzHasFeedback>
+                                            <button nz-button class="login-form-button, login-form-margin" nzType="primary" (click)="signup()">Register</button>
+                                            Or <a routerLink="/login"> login now! </a>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nz-spin>
+</div>
+<router-outlet></router-outlet>
+</body>
+</html> -->
+
+<!-- <body class="mt-0">
+    <section class="login-content">
+      <div class="login-content-lt"></div>
+      <div class="login-content-rt">
+        <div class="login-box">
+        <form class="login-form" nz-form [formGroup]="validateForm">
+          <div class="logo-wrapper">
+            <img src="../../../assets/images/logo.svg" alt="Rishabh Software">
+            <span>Meal Facility</span>
+          </div>
+          <h3 class="login-head">Register Your Account </h3>
+          <p class="login-text">Enter your credentials to login or access your account.</p>
+          <div class="form-group">
+            <nz-form-item>
+                <nz-form-control nzHasFeedback nzErrorTip="Please enter a valid Employee ID">
+                    <input nz-input placeholder="Employee ID (Max 15 characters)" id="employeeId" maxlength="15"  formControlName="employeeId"/>
+                </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div class="form-group">
+            <nz-form-item>
+                <nz-form-control nzHasFeedback [nzErrorTip]="userErrorTpl">
+                    <input nz-input placeholder="Name" type="text"  id="name" formControlName="name" />
+                    <ng-template #userErrorTpl let-control>
+                        <ng-container *ngIf="control.hasError('required')">Please input your username!</ng-container>
+                    </ng-template>
+                </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div class="form-group">
+            <nz-form-item>
+                <nz-form-control nzHasFeedback nzErrorTip="The input is not valid E-mail!">
+                    <input nz-input placeholder="emailId" id="emailId" formControlName="emailId" />
+                </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div class="form-group">
+            <nz-form-item>
+                <nz-form-control nzHasFeedback nzErrorTip="Please enter a valid Contact No (10 digits)">
+                    <input nz-input placeholder="Contact No (10 digits), (Max 10 character)" id="contactNo" type="tel" pattern="[0-9]{10}" maxlength="10" formControlName="contactNo"/>
+                </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div class="form-group">
+            <nz-form-item>
+                <nz-form-control nzHasFeedback [nzErrorTip]="errorPass">
+                    <input nz-input placeholder="Password" type="password" id="password" formControlName="password">
+                    <ng-template #errorPass let-control>
+                        <ng-container *ngIf="control.hasError('required')">Password Is Required!</ng-container>
+                        <ng-container *ngIf="control.hasError('pattern')">Password Should Contain 8 Characters, 1 Lowercase, 1 Uppercase, 1 Number, and 1 Special character</ng-container>
+                    </ng-template>
+                </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div class="form-group">
+            <nz-form-item>
+                <nz-form-control nzHasFeedback nzErrorTip="Please confirm your password">
+                    <input nz-input type="password" placeholder="Confirm Password" formControlName="checkPassword" />
+                    <div *ngIf="validateForm.get('checkPassword').hasError('passwordMismatch')" class="error-message">
+                        Passwords do not match!
+                    </div>
+                </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div class="form-group">
+          <nz-form-item>
+            <nz-form-control nzHasFeedback>
+                <button nz-button class="login-form-button, login-form-margin" nz-button nzType="primary" (click)="signup()">Register</button>
+                Or <a routerLink="/login"> login now! </a>
+            </nz-form-control>
+        </nz-form-item>
+    </div>
+        </form>
+      </div>
+      </div>
+    </section>
+</body> -->
+<body class="mt-0">
+    <section class="login-content">
+      <div class="login-content-lt"></div>
+      <div class="login-content-rt">
+        <div class="login-box" style="height: 100vh;">
+          <form class="login-form" [formGroup]="validateForm">
+            <div class="logo-wrapper">
+              <img src="../../../assets/images/logo.svg" alt="Rishabh Software">
+              <span>Meal Facility</span>
+            </div>
+            <h3 class="login-head" style="margin-bottom: 5px;">Register Your Account</h3>
+            <p class="login-text">Enter your credentials to login or access your account.</p>
+            
+            <div class="form-group" style="width: auto;">
+              <mat-form-field appearance="fill" style="border-style: none; height: auto; width: 500px;">
+                <mat-label>Employee ID (Max 15 characters)</mat-label>
+                <input matInput placeholder="Employee ID (Max 15 characters)" id="employeeId" maxlength="15" formControlName="employeeId">
+                <mat-error *ngIf="validateForm.get('employeeId').hasError('required')">Please enter a valid Employee ID</mat-error>
+              </mat-form-field>
+            </div>
+            
+            <div class="form-group">
+              <mat-form-field appearance="fill" style="border-style: none; height: auto; width: 500px;">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" id="name" formControlName="name">
+                <mat-error *ngIf="validateForm.get('name').hasError('required')">Please input your username!</mat-error>
+              </mat-form-field>
+            </div>
+            
+            <div class="form-group">
+              <mat-form-field appearance="fill" style="border-style: none; height: auto; width: 500px;">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="emailId" id="emailId" formControlName="emailId">
+                <mat-error *ngIf="validateForm.get('emailId').hasError('required')">The input is not valid E-mail!</mat-error>
+              </mat-form-field>
+            </div>
+            
+            <div class="form-group">
+              <mat-form-field appearance="fill" style="border-style: none; height: auto; width: 500px;">
+                <mat-label>Contact No (10 digits)</mat-label>
+                <input matInput placeholder="Contact No (10 digits), (Max 10 character)" id="contactNo" type="tel" pattern="[0-9]{10}" maxlength="10" formControlName="contactNo">
+                <mat-error *ngIf="validateForm.get('contactNo').hasError('required')">Please enter a valid Contact No (10 digits)</mat-error>
+              </mat-form-field>
+            </div>
+            
+            <div class="form-group">
+              <mat-form-field appearance="fill" style="border-style: none; height: auto; width: 500px;">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" type="password" id="password" formControlName="password" [type]="hide ? 'password' : 'text'">
+                <mat-error *ngIf="validateForm.get('password').hasError('required')">Password Is Required!</mat-error>
+                <mat-error *ngIf="validateForm.get('password').hasError('pattern')">Password Should Contain 8 Characters, 1 Lowercase, 1 Uppercase, 1 Number, and 1 Special character</mat-error>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" style="height: auto; margin: auto;">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>    
+            </button>
+            </mat-form-field>
+            </div>
+            
+            <div class="form-group">
+              <mat-form-field appearance="fill" style="border-style: none; height: auto; width: 500px;">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput type="Confirm Password" placeholder="Confirm Password" formControlName="checkPassword" [type]="hide ? 'confirm password' : 'text'">
+                <mat-error *ngIf="validateForm.get('checkPassword').hasError('passwordMismatch')">Passwords do not match!</mat-error>
+                <mat-error *ngIf="validateForm.get('checkPassword').hasError('required')">Please confirm your password</mat-error>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" style="height: auto; margin: auto;">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>    
+            </button>  
+            </mat-form-field>
+            </div>
+            
+            <div class="form-group">
+              <button mat-raised-button color="primary" (click)="signup()">Register</button>
+              Or <a routerLink="/login">login now!</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  

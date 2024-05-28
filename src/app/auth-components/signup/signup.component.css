@@ -1,0 +1,228 @@
+/* [nz-form] {
+   max-width: 600px;
+}
+
+.registration-container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 50px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   height: auto;
+}
+
+.image-container {
+   position: absolute;
+   top: 0;
+   right: 40%;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); /* Optional: For overlay effect} */
+
+
+/* .signup-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   margin: auto;
+
+}
+
+.container {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 30%;
+   margin-bottom: 40%;
+}
+
+.child {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.logo-container {
+   text-align: center;
+   margin-bottom: 20px;
+   height: auto;
+}
+
+.logo {
+   width: 100px;
+   height: auto;
+}
+
+.imgDiv {
+   width: 80%;
+   vertical-align: middle;
+   margin-bottom: 40px;
+   text-align: center;
+   margin: 5%;
+}
+
+h3 {
+   text-align: center;
+}
+
+.phone-select {
+   width: 70px;
+}
+
+.register-are {
+   margin-bottom: 10px;
+}
+
+.nz-form-control {
+   min-width: 280px;
+}
+
+.parent {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+}
+
+.login-form-margin {
+   margin-bottom: 16px;
+}
+
+.login-form-forgot {
+   float: right;
+}
+
+.login-form-button {
+   width: 100%;
+}
+
+button {
+   width: 100%;
+   background-color: #ec0c0c;
+   border: none;
+   color: #fff;
+   padding: 2%;
+   border-radius: 10px;
+   cursor: pointer;
+   font-size: 18px;
+   cursor: pointer;
+   margin-top: 1px;
+   padding-bottom: 10px;
+   text-align: center;
+}
+
+button:hover {
+   background-color: #004080;
+}
+
+button:focus{
+   outline: none;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+} */
+
+/* General Container Styling */
+.parent {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+}
+
+.child {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.image-container {
+   position: absolute;
+   top: 0;
+   right: 50%;
+   width: 50%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.signup-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.container {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.registration-container {
+   max-width: 400px;
+   padding: 40px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+}
+
+.logo-container {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.logo {
+   width: 100px;
+   height: auto;
+}
+
+.imgDiv {
+   width: 100%;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+h3 {
+   text-align: center;
+}
+
+.nz-form-item {
+   margin-bottom: 16px;
+}
+
+button {
+   width: 100%;
+   background-color: #e50914; /* Adjust the color to match the image */
+   border: none;
+   color: #fff;
+   padding: 10px 0;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 18px;
+   margin-top: 10px;
+}
+
+button:hover {
+   background-color: #b20710; /* Adjust hover color */
+}
+
+button:focus {
+   outline: none;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form-link {
+   display: block;
+   text-align: center;
+   margin-top: 10px;
+   color: #333;
+}
+
+ 

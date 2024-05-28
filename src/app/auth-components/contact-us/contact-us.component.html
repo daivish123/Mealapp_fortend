@@ -1,0 +1,58 @@
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<div class="container">
+  <header>
+    <img src="../../../assets/Images/logo.svg" alt="Logo">
+  </header>
+  <h1>Contact Us</h1>
+  <p>Feel free to get in touch with us for any queries!</p>
+  <div class="contact-box">
+    <div class="contact-left">
+      <h3>Send Us</h3>
+      <form [formGroup]="contactUsForm" (ngSubmit)="OnSubmit()">
+        <div class="input-row">
+          <div class="input-group">
+            <label>Name</label>
+            <input type="text" formControlName="name" placeholder="e.g. Daivish Shah">
+          </div>
+          <div class="input-group">
+            <label>Phone</label>
+            <input type="text" formControlName="phone" placeholder="+91 1234 5678 90">
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" formControlName="email" placeholder="daivishshah1245@gmail.com">
+          </div>
+          <div class="input-group">
+            <label>Subject</label>
+            <input type="text" formControlName="subject" placeholder="Subject of Query you have.">
+          </div>
+        </div>
+        <label>Message</label>
+        <textarea rows="5" formControlName="message" placeholder="Your Message"></textarea>
+        <button (click)="OnSubmit()" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="contact-right">
+      <div class="contact-right-content">
+        <h3>Reach Us</h3>
+        <table>
+          <tr>
+            <td>Email</td>
+            <td>contactus&#64;example.com</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>+91 5468 5424 45</td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>Plot 66, Beside Sigil India, Padra Road, Atladra, Vadodara 390012, Gujarat, India.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
